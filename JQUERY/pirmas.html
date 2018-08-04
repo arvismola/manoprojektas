@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#btn').click(function(e){
+                console.log('click paspaustas');
+                var t = $('#para').text();
+                t += ' abc';
+                $('#para').text(t);
+            });
+        });
+    </script>
+</head>
+<body>
+<p id="para">Labas</p>
+<button id="btn">Mygtukas</button>
+
+
+
+</body>
+</html>
