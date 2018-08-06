@@ -3,8 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-</head>
-<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("table").hide();
 
+            });
+
+
+        });
+    </script>
+
+</head>
+<style>
+    table {
+        border: 2px solid blue;
+        border-collapse: collapse;
+        padding: 10px;
+        color: brown;
+        margin: 50px;
+    }
+    td {
+        border: 2px solid blue;
+        border-collapse: collapse;
+        padding: 10px;
+        color: brown;
+        background-color: yellow;
+        margin: 50px;
+    }
+</style>
+<body>
+<div class="table">
+    <table>
+    <tr>
+        <td>langelis nr1</td>
+        <td>langelis nr2</td>
+        <td>langelis nr3</td>
+    </tr>
+    <tr>
+        <td>langelis nr4</td>
+        <td>langelis nr5</td>
+        <td>langelis nr6</td>
+    </tr>
+    <tr>
+        <td>langelis nr7</td>
+        <td>langelis nr8</td>
+        <td>langelis nr9</td>
+    </tr>
+    </table>
+</div>
+<div class="form">
+    <div class="form method="get" action="forms.html">
+    <label>Pasirinkite lentelės langelį:</label>
+    <select class="langeliai">
+        <option>Langelis 1</option>
+        <option>Langelis 2</option>
+        <option>Langelis 3</option>
+        <option>Langelis 4</option>
+        <option>Langelis 5</option>
+        <option>Langelis 6</option>
+        <option>Langelis 7</option>
+        <option>Langelis 8</option>
+        <option>Langelis 9</option>
+    </select><br>
+    <label>Tekstas</label>
+    <textarea class="tekstas" rows="3"></textarea>
+    <button>Spausk</button>
+</div>
 </body>
 </html>
