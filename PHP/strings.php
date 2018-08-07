@@ -26,3 +26,8 @@ echo '<br>';
 $s ="Labas rytas stai ir as";
 $m = explode(' ', $s);
 var_dump($m);
+echo '<br>';
+
+shuffle($m);
+$s = implode(' ', $m);
+echo $s;
