@@ -10,7 +10,7 @@ foreach($m as $e){   // loop kad sudeti visus po viena paeiliui, reikia susigalv
 echo $s;    echo '<br>';
 echo $s / count($m); echo '<br>'; // vidurkis geriausia su count tagu
 
-echo round($s / count($d), 2); echo '<br>'; // suapvalinimas ssu nr po kablelio
+echo round($s / count($d), 2); echo '<br>'; // suapvalinimas su nr po kablelio
 
 $masinos = [
     [
