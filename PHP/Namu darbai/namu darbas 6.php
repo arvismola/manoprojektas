@@ -38,14 +38,14 @@ $m = [
 
 
 for ($i=0; $i<count($m); $i++) {
-    if($m[$i]['Stazas']<=4) {
+    if($m[$i]['Stazas']>=10) {
+        $m[$i]['Priedas'] = $m[$i]['Atlyginimas'] / 100 * 15;
+    }
+    elseif($m[$i]['Stazas']<=4) {
         $m[$i]['Priedas'] = $m[$i]['Atlyginimas'] / 100 * 5;
     }
-    else($m[$i]['Stazas']<=9) {
+   else {
         $m[$i]['Priedas'] = $m[$i]['Atlyginimas'] / 100 * 10;
     }
-   /* else($m[$i]['Stazas']>=10) {
-        $m[$i]['Priedas'] = $m[$i]['Atlyginimas'] / 100 * 15
-    }*/
 }
 var_dump($m);
