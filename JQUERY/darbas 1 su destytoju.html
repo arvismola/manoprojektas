@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        $('#btn').click(function() {
+            var tekstas = $('')
+            return false;
+        }
+    });
+    </script>
+</head>
+<style>
+    .tbl {
+        border: 1px solid black;
+    }
+    td {
+        border: 1px solid black;
+        padding: 10px;
+    }
+</style>
+<body>
+<table class="tbl">
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+</table>
+<hr>
+<form id="frm">
+    <select name="sarasas">
+        <option value="11">Cele 1.1</option>
+        <option value="12">Cele 1.2</option>
+        <option value="13">Cele 1.3</option>
+        <option value="21">Cele 2.1</option>
+        <option value="22">Cele 2.2</option>
+        <option value="23">Cele 2.3</option>
+        <option value="31">Cele 3.1</option>
+        <option value="32">Cele 3.2</option>
+        <option value="33">Cele 3.3</option>
+    </select><br>
+    <input id="btn" type="button" value="Ideti">
+</form>
+</body>
+</html>
