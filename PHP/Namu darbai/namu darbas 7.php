@@ -4,19 +4,19 @@ Yra duotas masyvas su tekstais. Išvesti tuos tekstus, kurių ilgis dalinasi iš
  */
 
 
-$m = ['vienas', 'du', 'trys', 'keturi', 'penki', 'sesi', 'septyni', 'astuoni,', 'devyni', 'desimt'];
+$m = ['vienas', 'du', 'trys', 'keturi', 'penki', 'sesi', 'septyni', 'astuoni', 'devyni', 'desimt'];
 
 /*function dal($a) {
-    return $a /2!=1 and $a /3!=1;
-} */
-
-/*function dal($a) {
-    return $a %2!=1 and $a %3!=1;
+    return $a %2!=0 and $a %3!=0;
 } */
 
 function dal($a) {
-    return $a /2!=1 || $a /3!=1;
+    return strlen($a) %2==0 or strlen($a) %3==0;  //teisingas ats
 }
+
+/*function dal($a) {
+    return $a /2!=1 || $a /3!=1;
+}*/
 
 /* for ($i=0; $i<count($m); $i++) {
     if (dal($m[$i])) {
@@ -25,7 +25,7 @@ function dal($a) {
 } */
 
 for ($i=0; $i<count($m); $i++) {
-    if (strlen(dal($m[$i]))) {
+    if (dal($m[$i])) {                   // jeigu strlen yra funkcijoje antra karta jo galima ir nekartot
         echo $m[$i] . '<br>';
     }
 }
