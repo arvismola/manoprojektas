@@ -22,3 +22,4 @@ echo '<ol>';
 foreach ($m as $zmones) {
     echo '<li>' . darb($zmones). '</li>';
 }
+echo '</ol>';
