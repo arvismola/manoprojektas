@@ -1,6 +1,6 @@
 <?php
 /**
-Yra svečių sąrašąa. Informacija apie svečią: vardas, lytis, patiekalaa (viskas, vegetaras, veganas). Suskaičiuoti ir išvesti: a) kiek yra moterų ir kiek yra vyrų; b) kiek yra valgančių viska, vegetarų ir veganų.
+Yra svečių sąrašąs. Informacija apie svečią: vardas, lytis, patiekalaa (viskas, vegetaras, veganas). Suskaičiuoti ir išvesti: a) kiek yra moterų ir kiek yra vyrų; b) kiek yra valgančių viska, vegetarų ir veganų.
  */
 
 $m = [
@@ -14,14 +14,21 @@ $m = [
 
 $vyr =0;
 $mot =0;
+$viskas=0;
+$veget=0;
+$vegan=0;
 
-function vm($a) {
-    if ($a['lytis'] == 'vyras') {
-        return $vyr = + 1;
-    } else {
-        return $mot = + 1;
+foreach ($m as $zmogus) {
+    if ($zmogus['lytis'] == 'vyras') {
+        $vyr++;
     }
+    else {$mot++; }
+
 }
-vm();
-echo 'Vyrai: ' .' '. $vyr . '<br>';
-echo 'Moterys: ' .' '. $mot . '<br>';
+if ($zmogus['patiekalai'] == 'viskas') {
+    $viskas++;
+}
+elseif ($zmogus['patiekalai'] == 'vegetaras') {
+    $veget++;
+}
+else {$vegan++;}
