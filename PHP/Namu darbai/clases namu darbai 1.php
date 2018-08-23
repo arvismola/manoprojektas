@@ -15,5 +15,21 @@ class abc {
         ['vardas' => 'Vaclovas', 'lytis'=>'vyras'],
         ['vardas' => 'Janina', 'lytis'=>'moteris'],
     ];
-
+function moteru() {
+    $s=0;
+    foreach ($this->m as $z) {
+        if ($z['lytis'] == 'moteris') $s++;
+    }
+    return $s;
 }
+    function vyru() {
+        $s=0;
+        foreach ($this->m as $z) {
+            if ($z['lytis'] == 'vyras') $s++;
+        }
+        return $s;
+    }
+}
+
+$clase = new abc();
+echo 'Moteru: ' . $clase->moteru() . '<br>' . 'Vyru: ' . $clase->moteru();
