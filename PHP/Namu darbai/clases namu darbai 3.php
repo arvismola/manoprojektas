@@ -3,8 +3,7 @@
 Sukurti klasę su savybe - masyvu. Masyve asmenys, kurie aprasyti taip: vardas, sąskaita. Sukurti funkciją, kuri visiems Jonams suteiktų 100 EUR priedą Joninių proga. Pademonstruoti veikimą.
  */
 
-class jon
-{
+class jon {
     public $z = [
         ['vardas' => 'Jonas', 'saskaita' => 0],
         ['vardas' => 'Antanas', 'saskaita' => 0],
@@ -18,13 +17,12 @@ class jon
         ['vardas' => 'Tadas', 'saskaita' => 0]
     ];
     function premija(){
-        $a = $this->z;
-        for ($i=0; $i<count($a); $i++){
-            if ($a[$i]['vardas'] == 'Jonas'){
-                $a[$i]['saskaita'] +=100;
+        for ($i=0; $i<count($this->z); $i++){
+            if ($this->z[$i]['vardas'] == 'Jonas'){
+                $this->z[$i]['saskaita'] +=100;
             }
         }
-        //return $a;
+        return $this->z;
     }
 }
 
