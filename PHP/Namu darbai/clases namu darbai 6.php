@@ -21,10 +21,8 @@ class parduotuve {
         $s = [];
         foreach ($this->prekes as $preke){
             if ($preke->kaina >= $min and $preke->kaina <= $max){
-                $s[] = $preke;
-            }
-            return $s;
-        }
+                $s[] = $preke;}
+            return $s;}
     }
 }
 $testas = new parduotuve();
@@ -35,5 +33,8 @@ $testas->tiekimas('mesa', 6);
 $testas->tiekimas('traskuciai', 10);
 $testas->atrinkti(1,4);
 var_dump($testas);
+$o = $testas->atrinkti(1,4);
+echo '<br>';
+var_dump($o);
 
 
