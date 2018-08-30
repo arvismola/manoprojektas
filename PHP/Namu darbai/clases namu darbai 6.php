@@ -17,22 +17,23 @@ class parduotuve {
     function tiekimas($pav, $kain){
         $this->prekes[] = new preke($pav, $kain);
     }
-    function atrinkti(){
-        $s = $this->prekes;
-        for ($i=0; $i<count($this->prekes); $i++){
-            $s[$i] = asort($s);
+    function atrinkti($min, $max){
+        $s = [];
+        foreach ($this->prekes as $preke){
+            if ($preke->kaina >= $min and $preke->kaina <= $max){
+                $s[] = $preke;
+            }
+            return $s;
         }
-        return $s;
     }
 }
-
 $testas = new parduotuve();
-$testas->tiekimas('batonas', 0.60);
-$testas->tiekimas('kava', 4.50);
-$testas->tiekimas('alus', 1.00);
-$testas->tiekimas('mesa', 6.00);
-$testas->tiekimas('traskuciai', 0.89);
-$testas->atrinkti();
+$testas->tiekimas('batonas', 1);
+$testas->tiekimas('kava', 4);
+$testas->tiekimas('alus', 2);
+$testas->tiekimas('mesa', 6);
+$testas->tiekimas('traskuciai', 10);
+$testas->atrinkti(1,4);
 var_dump($testas);
 
 
