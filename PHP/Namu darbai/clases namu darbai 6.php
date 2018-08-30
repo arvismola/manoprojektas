@@ -34,3 +34,5 @@ $testas->tiekimas('mesa', 6.00);
 $testas->tiekimas('traskuciai', 0.89);
 $testas->atrinkti();
 var_dump($testas);
+
+
