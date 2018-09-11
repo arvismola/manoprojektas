@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<grupe>
+    <pavadinimas>PHP I lygis</pavadinimas>
+    <destytojas>Vilius</destytojas>
+    <mokiniai>
+        <mokinys id="arv">
+            <vardas>Arvydas</vardas>
+            <apranga>tamsi</apranga>
+        </mokinys>
+        <mokinys id="ryt">
+            <vardas>Rytis</vardas>
+            <apranga>sviesi</apranga>
+        </mokinys>
+        <mokinys id="gyt">
+            <vardas>Gytis</vardas>
+            <apranga>sviesi</apranga>
+        </mokinys>
+    </mokiniai>
+</grupe>
