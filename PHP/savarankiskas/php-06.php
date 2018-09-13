@@ -9,4 +9,8 @@ $m= ['ggdfdg^labas$gvdfgdf',
     'xddfhs^ir$dvdfbs',
     'kjhgf^as$qwertyu'];
 
-//padaryti namie, reikia keliu kintamuju ir rasti pozicijas simboliu( skaiciais ) ir paskui iskirpti su substr.
+
+$x = 'ggdfdg^labas$gvdfgdf';
+
+
+//reikia pasikonsultuoyi su destytoju nes substr parametrai yra stringas, pradzia ir ilgis kiek kirpti
