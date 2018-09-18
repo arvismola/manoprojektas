@@ -1,0 +1,1 @@
+[{"pavadinimas":"lietuva","skaicius":"3000000"},{"pavadinimas":"Lenkija","skaicius":"33000000"},{"pavadinimas":"Vokietija","skaicius":"75000000"}]
