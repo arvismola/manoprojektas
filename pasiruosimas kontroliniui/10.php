@@ -4,18 +4,18 @@ Sukurkite PHP skriptą, kuriame aprašykime klasę mokiniai, kurioje būtų vien
  */
 
 class mokiniai {
-   public $sarasas;
+    public $sarasas;
 
-   function insert($mokinys){
-       $this->sarasas[] = $mokinys;
-   }
-   function vid(){
-       $s=0;
-     for($i=0; $i<count($this->sarasas); $i++){
-         $s += strlen($this->sarasas[$i]);
-     }
-     return $s / count($this->sarasas);
-   }
+    function insert($mokinys){
+        $this->sarasas[] = $mokinys;
+    }
+    function vid(){
+        $s=0;
+        for($i=0; $i<count($this->sarasas); $i++){
+            $s += strlen($this->sarasas[$i]);
+        }
+        return $s / count($this->sarasas);
+    }
 }
 
 $testas = new mokiniai();
